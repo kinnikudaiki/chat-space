@@ -5,13 +5,25 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_name|string|null: false|
+|name|string|null: false|
 |password|string|null: false|
 |mail_address|string|null: false, unique: true|
 
 ### Association
 - has_many :messages
 - has_many :groups
+
+
+## users_messagesテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|message_id|integer|null: false, foreign_key: true|
+
+### Association
+- belongs_to :message
+- belongs_to :user
 
 
 ## messagesテーブル
@@ -33,9 +45,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|messages|text||
-|image|string||
-|user_id|integer|foreign_key: true|
+|name|string|null: false|
 
 ### Association
 - has_many :messages
