@@ -45,12 +45,16 @@
       padding: 20px;
       color: #ffffff;
         .side-bar__group__name {
-          margin-bottom: 5px;
-          font-size: 15px;
-        }
-        .side-bar__group__message {
-          font-size: 11px;
           margin-bottom: 40px;
+          .side-bar__group__message {
+            color: white;
+            font-size: 15px;
+            margin-bottom: 5px;
+          }
+          .message {
+            color: white;
+            font-size: 11px;
+          }
         }
     }
 }
