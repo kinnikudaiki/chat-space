@@ -56,10 +56,11 @@ $('#new_message').on('submit', function(e){
         $('.chat-main__messages-list').append(html);
         $('form')[0].reset();
         $('.chat-main__messages-list').animate({ scrollTop: $('.chat-main__messages-list')[0].scrollHeight});
-        $('.submit').prop('disabled', false);
       })
       .fail(function() {
         alert('error');
+      })
+      .always(function() {
         $('.submit').prop('disabled', false);
       });
 })
