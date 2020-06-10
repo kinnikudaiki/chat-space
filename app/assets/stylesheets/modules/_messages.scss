@@ -6,6 +6,10 @@
   display: flex;
 }
 
+a {
+  text-decoration: none;
+}
+
 .side-bar {
   background-color: #253141;
   height: 100vh;
@@ -120,7 +124,7 @@
       .messages-content {
       color: #434a54;
       font-size: 14px;
-      margin-bottom: 26px;
+      margin-bottom: 46px;
       }
     }
     &__messages-form {
